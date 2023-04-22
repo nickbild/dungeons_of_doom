@@ -10,7 +10,7 @@ Dungeons of Daggorath was a very popular first-person RPG in the early 1980s.  I
 
 It was a very early three-dimensional game that allowed the player to explore a dungeons and battle monsters via a text based interface.  That interface is used to move around, fight, pick up or use items, and much more.  However, the vast majority of the time, the commands entered revolve around moving and attacking.
 
-For these common actions, the text-based interface can be a bit slow and clunky, so I modified the source code to enable the right joystick.  Moving the joystick moves the player around the dungeon, just as would be expected.  The button triggers the command `ATTACK RIGHT`.
+For these common actions, the text-based interface can be a bit slow and clunky, so I modified the source code to enable the right joystick (I always wished this was possible as a child).  Moving the joystick moves the player around the dungeon, just as would be expected.  The button triggers the command `ATTACK RIGHT`.
 
 Being a first-person game, I could not resist the temptation to insert a few Doom characters in place of some of the originals.  The CoCo may not be able to play Doom, but it kinda-sorta can do something like it.
 
