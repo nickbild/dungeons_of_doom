@@ -18,6 +18,14 @@ I also gave the player unlimited power and health, which is great for exploring 
 
 After assembly, the binary can be burned to a ROM chip mapped into the cartridge port, or should also work with any decent emulator.  I assembled to source code with `LWASM`.
 
+Speaking of source code, the former CEO of DynaMicro, Inc. very graciously released the source code for public distribution, but only in its original form.  Since I have modified it, I cannot distribute my work.  However, one can still recreate Dungeons of Doom without too much trouble by:
+
+1) Downloading the [original 6809 source code](https://github.com/MichaelSpencerJr/DungeonsOfDaggorath).
+2) Making the modifications I have listed below.
+3) Assembling the code.
+
+## Modifications to the Original Source Code
+
 ## Media
 
 Screencaps of modified enemies:
