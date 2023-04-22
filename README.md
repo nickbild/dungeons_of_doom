@@ -24,6 +24,26 @@ Speaking of source code, the former CEO of DynaMicro, Inc. very graciously relea
 2) Making the modifications I have listed below.
 3) Assembling the code.
 
+## Media
+
+Screencaps of modified enemies:
+
+![](https://raw.githubusercontent.com/nickbild/dungeons_of_doom/main/media/capture1.png)
+![](https://raw.githubusercontent.com/nickbild/dungeons_of_doom/main/media/capture2.png)
+
+For comparison:
+
+![](https://raw.githubusercontent.com/nickbild/dungeons_of_doom/main/media/capture1_comparison.png)
+![](https://raw.githubusercontent.com/nickbild/dungeons_of_doom/main/media/capture2_comparison.png)
+
+
+Playing on my CoCo 2:
+
+![](https://raw.githubusercontent.com/nickbild/dungeons_of_doom/main/media/play1_sm.jpg)
+![](https://raw.githubusercontent.com/nickbild/dungeons_of_doom/main/media/play2_sm.jpg)
+![](https://raw.githubusercontent.com/nickbild/dungeons_of_doom/main/media/play3_sm.jpg)
+![](https://raw.githubusercontent.com/nickbild/dungeons_of_doom/main/media/play4_sm.jpg)
+
 ## Modifications to the Original Source Code
 
 - In `CD.ASM`:
@@ -167,28 +187,6 @@ PMOVEBACKWARD
 ```
 
 - In `SOUNDS.ASM`:
-
-
-
-## Media
-
-Screencaps of modified enemies:
-
-![](https://raw.githubusercontent.com/nickbild/dungeons_of_doom/main/media/capture1.png)
-![](https://raw.githubusercontent.com/nickbild/dungeons_of_doom/main/media/capture2.png)
-
-For comparison:
-
-![](https://raw.githubusercontent.com/nickbild/dungeons_of_doom/main/media/capture1_comparison.png)
-![](https://raw.githubusercontent.com/nickbild/dungeons_of_doom/main/media/capture2_comparison.png)
-
-
-Playing on my CoCo 2:
-
-![](https://raw.githubusercontent.com/nickbild/dungeons_of_doom/main/media/play1_sm.jpg)
-![](https://raw.githubusercontent.com/nickbild/dungeons_of_doom/main/media/play2_sm.jpg)
-![](https://raw.githubusercontent.com/nickbild/dungeons_of_doom/main/media/play3_sm.jpg)
-![](https://raw.githubusercontent.com/nickbild/dungeons_of_doom/main/media/play4_sm.jpg)
 
 ## About the Author
 
