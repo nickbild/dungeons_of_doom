@@ -107,7 +107,7 @@ Replace line 47 with:
 LBRA    PLAY10         ;loop ; NAB - BRA to LBRA
 ```
 
-In `HUPDAT.ASM`:
+- In `HUPDAT.ASM`:
 
 This is optional, if you want infinte health.  After line 40, add:
 
@@ -116,6 +116,59 @@ This is optional, if you want infinte health.  After line 40, add:
         CLRB
         STD PDAM
 ```
+
+- In `ONCE.ASM`:
+
+After line 284, add:
+
+```
+        CLR     TEMP1
+```
+
+This is optional, if you want infinite power.  After line 288, add:
+
+```
+        LDA     #$7F            ; NAB - Max power.
+        STA     PPOW
+```
+
+- In `PATTK.ASM`:
+
+After line 11, add this label:
+
+```
+ATTACKRIGHT
+```
+
+- In `PTURN.ASM`:
+
+After line 20, add the label:
+
+```
+PMOVELEFT
+```
+
+After line 29, add the label:
+
+```
+PMOVERIGHT
+```
+
+After line 153, add the label:
+
+```
+PMOVEFORWARD
+```
+
+After line 166, add the label:
+
+```
+PMOVEBACKWARD
+```
+
+- In `SOUNDS.ASM`:
+
+
 
 ## Media
 
