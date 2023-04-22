@@ -246,6 +246,220 @@ Replace lines 411-412 with:
         LBRA     SNOUT           ; ; NAB - L
 ```
 
+- In `D3.ASM`:
+
+Replace the spider vector list with:
+
+```
+;       Body
+SPIDER  SVORG   40,100
+        SVECT   40,105
+        SVECT   42,115
+        SVECT   52,125
+        SVECT   60,128
+        SVECT   68,125
+        SVECT   78,115
+        SVECT   80,105
+        SVECT   80,95
+        SVECT   78,90
+        SVECT   68,80
+        SVECT   60,77
+        SVECT   52,80
+        SVECT   42,90
+        SVECT   40,100
+        SVNEW
+
+;       Eye
+        SVORG   50,101
+        SVECT   52,106
+        SVECT   56,106
+        SVECT   58,101
+        SVECT   56,96
+        SVECT   52,96
+        SVECT   50,101
+        SVNEW
+
+;       Pupil
+        SVORG   53,99
+        SVECT   53,103
+        SVECT   55,103
+        SVECT   55,99
+        SVECT   53,99
+        SVNEW
+
+;       Mouth
+        SVORG   64,90
+        SVECT   64,95
+        SVECT   64,101
+        SVECT   64,105
+        SVECT   64,112
+        SVECT   69,114
+        SVECT   73,110
+        SVECT   74,101
+        SVECT   73,92
+        SVECT   69,88
+        SVECT   64,90
+        SVNEW
+
+;       Teeth
+        SVORG   65,95
+        SVECT   70,97
+        SVECT   65,99
+        SVNEW
+        SVORG   65,103
+        SVECT   70,105
+        SVECT   65,107
+        SVNEW
+        SVORG   71,99
+        SVECT   66,101
+        SVECT   71,103
+        SVNEW
+
+;       Horns
+        SVORG   44,118
+        SVECT   40,124
+        SVECT   35,127
+        SVECT   45,127
+        SVECT   50,123
+        SVNEW
+
+        SVORG   44,87
+        SVECT   40,81
+        SVECT   35,78
+        SVECT   45,78
+        SVECT   50,82
+        SVNEW
+
+        SVORG   40,108
+        SVECT   35,111
+        SVECT   41,114
+        SVNEW
+
+        SVORG   40,97
+        SVECT   35,94
+        SVECT   41,91
+        SVEND
+
+; End of Spider vector list
+```
+
+- In `D4.ASM`:
+
+Replace the viper vector list with:
+
+```
+VIPER
+;       Head
+        SVORG   55,120
+        SVECT   55,130
+        SVECT   55,140
+        SVECT   62,147
+        SVECT   69,140
+        SVECT   75,140
+        SVECT   83,140
+        SVECT   83,130
+        SVECT   83,120
+        SVECT   75,120
+        SVECT   69,120
+        SVECT   62,113
+        SVECT   55,120
+        SVNEW
+
+;       Eyes
+        SVORG   62,118
+        SVECT   66,124
+        SVECT   66,129
+        SVECT   62,123
+        SVECT   62,118
+        SVNEW
+
+        SVORG   62,142
+        SVECT   66,136
+        SVECT   66,131
+        SVECT   62,137
+        SVECT   62,142
+        SVNEW
+
+;       Mouth
+        SVORG   70,122
+        SVECT   70,130
+        SVECT   70,138
+        SVECT   78,138
+        SVECT   78,130
+        SVECT   78,122
+        SVECT   70,122
+        SVNEW
+
+        SVORG   70,124
+        SVECT   72,124
+        SVECT   72,130
+        SVECT   72,136
+        SVECT   70,136
+        SVNEW
+
+        SVORG   78,124
+        SVECT   76,124
+        SVECT   76,130
+        SVECT   76,136
+        SVECT   78,136
+        SVNEW
+
+        ; R
+        SVORG   68,140
+        SVECT   73,145
+        SVECT   78,150
+        SVECT   85,152
+        SVECT   88,153
+        SVECT   98,155
+        SVECT   98,150
+        SVECT   88,145
+        SVECT   88,140
+        SVECT   98,139
+        SVECT   108,138
+        SVECT   118,136
+        SVECT   124,135
+        SVNEW
+
+        ; L
+        SVORG   68,120
+        SVECT   73,115
+        SVECT   78,110
+        SVECT   85,108
+        SVECT   88,107
+        SVECT   98,105
+        SVECT   98,110
+        SVECT   88,115
+        SVECT   88,120
+        SVECT   98,121
+        SVECT   108,122
+        SVECT   118,124
+        SVECT   124,125
+        SVNEW
+
+        ; Legs
+        SVORG   120,128
+        SVECT   114,129
+        SVECT   104,129
+        SVECT   94,128
+        SVECT   94,131
+        SVECT   104,132
+        SVECT   114,132
+        SVECT   120,133
+        SVNEW
+
+        ; Horns
+        SVORG   74,146
+        SVECT   68,148
+        SVECT   77,149
+        SVNEW
+
+        SVORG   74,114
+        SVECT   68,112
+        SVECT   77,111
+
+        SVEND
+```
+
 ## About the Author
 
 [Nick A. Bild, MS](https://nickbild79.firebaseapp.com/#!/)
