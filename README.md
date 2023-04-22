@@ -188,6 +188,64 @@ PMOVEBACKWARD
 
 - In `SOUNDS.ASM`:
 
+On line 16, insert the following after the `SOUNDI` label:
+
+```
+; NAB - sound back on (reading joystick turns it off)
+        STA     TEMP1
+        LDA     $FF23
+        ORA     #8
+        STA     $FF23
+        LDA     TEMP1
+```
+
+Replace line 198 with:
+
+```
+SNRAT1  LBSR     SNOISE          ;get a random noise value ; NAB - L
+```
+
+Replace line 279 with:
+
+```
+SNWSH2  LBSR     SNZNVA          ;get some noise ; NAB - L
+```
+
+Replace line 285 with:
+
+```
+SNWSH1  LBSR     SNENVN          ;decompression subroutine ; NAB - L
+```
+
+On line 309, after the `SNOUT` label, insert:
+
+```
+        ; NAB - sound back on (reading joystick turns it off)
+        STA     TEMP1
+        LDA     $FF23
+        ORA     #8
+        STA     $FF23
+        LDA     TEMP1
+```
+
+On line 320, insert after the `SNOISE` label:
+
+```
+        ; NAB - sound back on (reading joystick turns it off)
+        STA     TEMP1
+        LDA     $FF23
+        ORA     #8
+        STA     $FF23
+        LDA     TEMP1
+```
+
+Replace lines 411-412 with:
+
+```
+        LBLS     SNCLK4          ; ; NAB - L
+        LBRA     SNOUT           ; ; NAB - L
+```
+
 ## About the Author
 
 [Nick A. Bild, MS](https://nickbild79.firebaseapp.com/#!/)
