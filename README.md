@@ -14,9 +14,9 @@ For these common actions, the text-based interface can be a bit slow and clunky,
 
 Being a first-person game, I could not resist the temptation to insert a few Doom characters in place of some of the originals.  The CoCo may not be able to play Doom, but it kinda-sorta can do something like it.
 
-I also gave the player unlimited power and health, which is great for exploring and testing, but I've also got a version without this boost for those that want the challenge.
+I also gave the player unlimited power and health, which is great for exploring and testing, but that boost can be left out for those that want the challenge.
 
-The binary can be burned to a ROM chip mapped into the cartridge port, or should also work with any decent emulator.
+After assembly, the binary can be burned to a ROM chip mapped into the cartridge port, or should also work with any decent emulator.  I assembled to source code with `LWASM`.
 
 ## Media
 
