@@ -16,7 +16,7 @@ Being a first-person game, I could not resist the temptation to insert a few Doo
 
 I also gave the player unlimited power and health, which is great for exploring and testing, but that boost can be left out for those that want the challenge.
 
-After assembly, the binary can be burned to a ROM chip mapped into the cartridge port, or should also work with any decent emulator.  I assembled to source code with [LWASM](http://www.lwtools.ca/manual/c62.html).
+After assembly, the binary can be burned to a ROM chip mapped into the cartridge port, or should also work with any decent emulator.  I assembled the source code with [LWASM](http://www.lwtools.ca/manual/c62.html).
 
 Speaking of source code, the former CEO of DynaMicro, Inc. very graciously released the source code for public distribution, but only in its original form.  Since I have modified it, I cannot distribute my work.  However, one can still recreate Dungeons of Doom without too much trouble by:
 
