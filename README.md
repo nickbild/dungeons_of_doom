@@ -107,6 +107,16 @@ Replace line 47 with:
 LBRA    PLAY10         ;loop ; NAB - BRA to LBRA
 ```
 
+In `HUPDAT.ASM`:
+
+This is optional, if you want infinte health.  After line 40, add:
+
+```
+        CLRA                    ; NAB - IDDQD
+        CLRB
+        STD PDAM
+```
+
 ## Media
 
 Screencaps of modified enemies:
