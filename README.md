@@ -26,6 +26,87 @@ Speaking of source code, the former CEO of DynaMicro, Inc. very graciously relea
 
 ## Modifications to the Original Source Code
 
+- In `CD.ASM`:
+
+After line 623, insert the following:
+
+```
+TEMP1   RMB     1                ; NAB
+BAGP    RMB     2                ; NAB
+```
+
+- In `HUMAN.ASM`:
+
+Replace line 13 with:
+
+```
+LBNE    PLAY20          ;   yes ; NAB: BNE to LBNE
+```
+
+On line 17, insert the follwing code after the `PLAY10` label:
+
+```
+        ; NAB - check for joystick input.
+
+        ; Joystick button.
+        LDA     65280
+        ANDA    #1
+        CMPA    #0
+        BNE     NOBUTTONPRESS
+        
+        ; Attack right.
+        LDU     #PRHAND
+        JSR     ATTACKRIGHT
+        JMP     NOMOVE
+
+NOBUTTONPRESS
+
+        JSR     [$A00A]         ; BASIC joystick reading routine.
+
+        LDA     $015B           ; Right joystick y-axis
+        CMPA    #10
+        BHI     NOMOVEFORWARD
+
+        ; Move forward
+        JSR     PMOVEFORWARD
+        JMP     NOMOVE
+
+NOMOVEFORWARD
+        CMPA    #50
+        BLO     NOMOVEBACKWARD
+
+        ; Move backward
+        JSR     PMOVEBACKWARD
+        JMP     NOMOVE
+
+NOMOVEBACKWARD
+        LDA     $015A           ; Right joystick x-axis
+        CMPA    #10
+        BHI     NOMOVELEFT
+
+        ; Move left
+        LDB     PDIR
+        JSR     PMOVELEFT
+        JMP     NOMOVE
+
+NOMOVELEFT
+        CMPA    #50
+        BLO     NOMOVE
+
+        ; Move right
+        LDB     PDIR
+        JSR     PMOVERIGHT
+
+NOMOVE
+        ; NAB - END check for joystick input.
+```
+
+Replace line 47 with:
+
+```
+LBRA    PLAY10         ;loop ; NAB - BRA to LBRA
+```
+
 ## Media
 
 Screencaps of modified enemies:
